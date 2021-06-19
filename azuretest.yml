@@ -8,9 +8,9 @@ pr:
   - main
   - develop
 
-jobs:
-  job: foo
-    runs-on: ubuntu-latest
-    steps:
-      - uses: epeisach/rabbitmq-test-action@main
+pool:
+  vmImage: ubuntu-latest
+  
+steps:
+  - uses: epeisach/rabbitmq-test-action@main
 #        displayName: RUn RabbitMq
