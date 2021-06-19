@@ -10,13 +10,7 @@ pr:
 
 jobs:
   - job: foo
-    pool:
-      vmImage: 'ubuntu-latest'
-
+    runs-on: ubuntu-latest
     steps:
       - uses: epeisach/rabbitmq-test-action@main
-        displayName: RUn RabbitMq
-      - run: |
-          docker ps
-        displayName: Ensure running          
-          
+#        displayName: RUn RabbitMq
