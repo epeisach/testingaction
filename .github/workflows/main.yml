@@ -9,6 +9,6 @@ jobs:
         id: rbmq
         uses: epeisach/rabbitmq-test-action@main
       - name: See what is happening
-        script: docker ps
+        run: docker ps
         
         
