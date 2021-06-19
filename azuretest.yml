@@ -14,10 +14,9 @@ jobs:
       vmImage: 'ubuntu-latest'
 
     steps:
-      - name: RabbitMQ action step
-        uses: epeisach/rabbitmq-test-action@main
-      - name: Ensure running
-        run: |
+      - uses: epeisach/rabbitmq-test-action@main
+        displayName: RUn RabbitMq
+      - run: |
           docker ps
-          
+        displayName: Ensure running          
           
