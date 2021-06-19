@@ -1,0 +1,11 @@
+on: [push]
+
+jobs:
+  start_docker_job:
+    runs-on: ubuntu-latest
+    name: Simple test of docker
+    steps:
+      - name: RabbitMq action step
+        id: rbmq
+        uses: epeisach/rabbitmq-test-action
+        
