@@ -9,7 +9,7 @@ pr:
   - develop
 
 jobs:
-  - job: foo
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: epeisach/rabbitmq-test-action@main
