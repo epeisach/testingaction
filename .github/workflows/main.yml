@@ -8,4 +8,7 @@ jobs:
       - name: RabbitMq action step
         id: rbmq
         uses: epeisach/rabbitmq-test-action@main
+      - name: See what is happening
+        script: docker ps
+        
         
