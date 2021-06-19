@@ -7,5 +7,5 @@ jobs:
     steps:
       - name: RabbitMq action step
         id: rbmq
-        uses: epeisach/rabbitmq-test-action@master
+        uses: epeisach/rabbitmq-test-action@main
         
