@@ -12,5 +12,6 @@ pool:
   vmImage: ubuntu-latest
   
 steps:
-  - uses: epeisach/rabbitmq-test-action@main
+  - script: docker ps
+#  - uses: epeisach/rabbitmq-test-action@main
 #        displayName: RUn RabbitMq
