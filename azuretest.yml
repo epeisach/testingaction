@@ -1,0 +1,23 @@
+name: $(BuildDefinitionName)_$(Date:yyyyMMdd)$(Rev:.rr)
+
+trigger:
+  - main
+  - develop
+
+pr:
+  - main
+  - develop
+
+jobs:
+  - job: foo
+    pool:
+      vmImage: 'ubuntu-latest'
+
+    steps:
+      - name: RabbitMQ action step
+        uses: epeisach/rabbitmq-test-action@main
+      - name: Ensure running
+        run: |
+          docker ps
+          
+          
